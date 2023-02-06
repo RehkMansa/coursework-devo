@@ -2,7 +2,7 @@
 
 ### DECENTRALIZED VOTING APPLICATION
 
-Devo is a dapp built on the ethereum blockchain. The smart contract can be found [here](https://github.com/komus-Israel/DEVO-smart-contract)
+Devo is a dapp built on the ethereum blockchain.
 
 The purpose of this client application is to visualize how an application can interact with a smart contract and how DEVO smart contract can be used to solve voting issues.
 
