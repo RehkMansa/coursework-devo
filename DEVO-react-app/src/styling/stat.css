@@ -1,0 +1,105 @@
+.stat-cont {
+    
+    background: linear-gradient(180deg,rgb(72, 161, 221, .9), #af4261);
+    height: fit-content;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap:20px;
+    flex-direction: column;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+}
+
+.stat-data {
+    background: linear-gradient(to left bottom, rgba(255,255, 255, 0.2), rgba(255, 255, 255, .1));
+    padding: 1em;
+    border-radius: 12px;
+    box-shadow: 6px 12px 30px rgba(0, 0, 0, .4);
+    transition: 0.5s;
+    min-width: 200px;
+}
+
+.stat-data h3 {
+   color: antiquewhite;
+}
+
+.stat-data p {
+    background-image: linear-gradient(45deg,   #6b102a, #05253a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    width: inherit;
+}
+
+.stat-header {
+    font-size: 2em;
+    background-image: linear-gradient(45deg,   #6f283c, #12344b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+
+@media only screen and (min-width: 560px){
+
+    .stat-data:hover{
+        background:linear-gradient(
+            to left top,
+            rgba(255, 255, 255, .5),
+            rgba(255, 255, 255, 0.2)
+        );
+    
+        transform: translateY(-10%);
+        cursor: pointer;
+    }
+    
+}
+
+@media only screen and (max-width:560px){
+    .stat-cont {
+
+        width: auto;
+        overflow: scroll;
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        background: transparent;
+        
+    }
+
+    .stats {
+        flex-direction: column;
+        height: fit-content;
+        padding: 1em;
+    }
+
+    .stat-data {
+        background: linear-gradient(180deg,rgb(72, 161, 221, .5), #af4261);
+        padding: 0.5em;
+        box-shadow: 6px 12px 30px rgba(0, 0, 0, .5);
+        margin-bottom: 1em;
+    }
+
+    .stat-header {
+        background-image: linear-gradient(45deg,   #af4261, #48a1dd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+    }
+
+    
+
+}

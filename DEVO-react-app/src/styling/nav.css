@@ -1,0 +1,57 @@
+.navbar {
+    background: transparent;
+    margin-top: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    color: white;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 2em;
+    background-image: linear-gradient(45deg,   #af4261, #48a1dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+   
+   
+}
+
+.navbar .header-options {
+    color: white;
+    margin: auto;
+    margin-right: 1em;
+
+    
+    
+   
+    
+}
+
+.header-options a {
+    background: rgba(255, 255, 255, .2);
+    padding: 1em;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width:560px){
+    .navbar .header-options {
+        font-size: 12px;
+    }
+
+    .navbar h1 {
+        font-size: 1.5em;
+    }
+
+    
+}

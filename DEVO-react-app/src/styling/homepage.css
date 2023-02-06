@@ -1,0 +1,314 @@
+.homepage-container {
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    overflow: scroll;
+    background-image: url('../images/bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+    
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    overflow: scroll;
+    
+}
+
+.welcome-msg {
+    position: absolute;
+    top:30%;
+    margin-left: 20px;
+    width: 40%;
+    border-radius: 12px;
+    padding: 1.5em;
+   
+    
+   
+
+}
+
+.welcome-msg h1, .welcome-msg h2 {
+    text-align: start;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-size: 2.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.page-content {
+    position: relative;
+    top: 100%;
+}
+
+.connect-wallet {
+    border:none;
+    background: linear-gradient(45deg,   rgb(175, 66, 97, .9), rgb(72, 161, 221, .9));
+    padding: 1em;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    font-weight: bold;
+    color: rgb(24, 1, 24);
+}
+
+.get-started {
+    margin-bottom: 50px;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+
+
+.candidate-list {
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+}
+
+.candidate-profile {
+
+    margin: auto;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 50px;
+    height: 300px;
+    
+    
+    
+}
+
+.candidate-image {
+
+    height: 200px;
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    
+    
+}
+
+.canditates-header {
+    margin-top: 5em;
+    margin-bottom: 2em;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.candidate-name, .candidate-party {
+    font-weight: bold;
+}
+
+.instruction-cont h2 {
+    color: white;
+    font-size: 3em;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.instruction-cont {
+    display: flex;
+    margin-top: 5em;
+    width: auto;
+    padding: 5em;
+    
+    
+    
+}
+
+.instruction-cont ul {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.main-instruction {
+    background: linear-gradient(45deg,   #af4261, #48a1dd);
+    border-radius: 12px;
+    padding: 2em;
+    box-shadow: 6px 12px 30px black;
+    
+   
+    
+}
+
+
+
+.main-instruction li {
+    padding: 12px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+}
+
+.main-instruction li p {
+    color: white;
+    font-weight: bold;
+}
+
+.svg {
+    margin-top: -65px;
+    border-radius: 12px;
+
+}
+
+.mark-icon {
+    height: 50px;
+}
+
+.vote-count {
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: bolder;
+}
+
+.candidate-name {
+    text-align: center;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    max-width: 50%;
+
+    
+}
+
+#voting-modal {
+
+    z-index: 10000000;
+}
+
+.connected-address {
+    border-radius: 5px;
+    background:linear-gradient(
+            to left top,
+            rgba(255, 255, 255, .5),
+            rgba(255, 255, 255, 0.7)
+        );
+    padding: 5px;
+    color: rgb(31, 4, 51);
+    font-weight: bold;
+    width: fit-content;
+}
+
+.welcome-msg .install-meta {
+    background: linear-gradient(45deg,   rgb(175, 66, 97, .9), rgb(72, 161, 221, .9));
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    width: fit-content;
+    font-weight:bold;
+    color:  rgb(24, 1, 24);
+   
+
+}
+
+@media only screen and (max-width:560px){
+
+    .welcome-msg {
+        width: 60%;
+    }
+
+    .welcome-msg h1, .welcome-msg h2 {
+
+        font-size: 1.5em;
+        
+    }
+
+    .connect-wallet, .install-meta {
+        font-size: 12px;
+        padding: 10px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+
+    .instruction-cont {
+        flex-direction: column;
+        width: auto;
+        padding: 0;
+    }
+
+    .instruction-cont h2 {
+        
+        font-size: 1.5em;
+        width: 100%; 
+    }
+
+    .get-started {
+        font-size: 1.5em;
+    }
+
+    .cont-withsvg {
+        width: 300px;
+        margin: auto;
+    }
+
+    .mark-icon {
+        height: 30px;
+    }
+
+    .main-instruction li p{ 
+        font-weight: normal;
+    }
+
+    .svg {
+        margin-top: -40px;
+        border-radius: 12px;
+    
+    }
+    .candidate-list {
+        width: 100%;
+    }
+
+    .svg {
+        margin-top: -50px;
+    }
+
+    .connected-address {
+        width: max-content;
+        padding: 3px;
+        padding-top: 0.5px;
+        padding-bottom: 0.5px;
+    }
+
+    .connected-address p {
+        font-weight: normal;
+        font-size: 10px;
+    }
+
+    
+    
+
+    
+
+}
+
+
+@media only screen and (max-width:360px){
+
+    .welcome-msg h1, .welcome-msg h2 {
+
+        font-size: 15px;
+    }
+
+}
